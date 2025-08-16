@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Cinzel:wght@400..900&family=Cormorant+SC:wght@300;400;500;600;700&family=Lexend:wght@100..900&family=Special+Gothic+Expanded+One&display=swap');
+
+.kaiser-rp-bg {
+    text-align: center;
+    margin: 10px auto;
+    background: var(--kaiser-bg);
+    /* border-radius: 10px; */
+    max-width: 700px;
+    width: 100%;
+    padding: 40px;
+    padding-bottom: 20px;
+    outline-offset: -10px;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+  }
+
+.kaiser-head {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kaiser-hname {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border-bottom: 2px solid var(--kaiser-bd);
+    position: relative;
+}
+
+.kaiser-name {
+    display: block;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 28px;
+    font-family: "Cormorant SC", serif;
+    font-weight: 600;
+    font-style: italic;
+    margin-left: 0;
+    padding-top: 0;
+    color: var(--kaiser-title);
+}
+
+.kaiser-surname {
+    display: block;
+    box-sizing: border-box;
+    text-align: left;
+    margin-top: -18px;
+    margin-bottom: -15px;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--kaiser-title);
+}
+
+.ksim-container {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+}
+
+.ksim-main > img {
+    width: 100%;
+    max-width: 190px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0;
+    margin-right: -20px;
+    border-top-right-radius: 50px;
+    border: 2px solid var(--kaiser-bd);
+    position: relative;
+}
+
+.ksim-topleft > img {
+    width: 100%;
+    max-width: 100px;
+    height: 140px;
+    object-fit: cover;
+    border-top-right-radius: 50px;
+    border: 2px solid var(--kaiser-bd);
+}
+
+.kaiser-rp-box {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+
+  }
+
+/* .rpboxcolor {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    background-color: var(--kaiser-box);
+    margin-top: 35px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+  } */
+
+.kaiser-content {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+    font-size: 16px;
+    width: 100%;
+    max-width: 620px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    /* margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px; */
+    text-align: justify;
+    color: var(--kaiser-text);
+  }
+
+.kaiser-rm {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ks-remark-text {
+    display: block;
+    /* margin-right: 30px; */
+    margin-bottom: 15px;
+    margin-top: 30px;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: 2px solid var(--kaiser-bd);
+    /* border-radius: 5px; */
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    color: var(--kaiser-text);
+    font-family: "Bai Jamjuree", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+
+.kaiser-footer {
+    display: flex;
+    box-sizing: border-box;
+    justify-items: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.kaiser-logo {
+    display: block;
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 19%;
+    max-width: 130px;
+    height: 130px;
+    border-radius: 100px;
+    object-fit: cover;
+    position: absolute;
+    border: 2px solid var(--kaiser-bd);
+}
+
+.kaiser-banner {
+    display: block;
+    box-sizing: border-box;
+    object-fit: cover;
+    margin-top: 10px;
+    max-width: 650px;
+    width: 100%;
+    height: 100px;
+    margin-left: 30px;
+    border-top-right-radius: 70px;
+    border: 2px solid var(--kaiser-bd);
+}
+
+.kaiser-quote {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.ks-qo-text {
+    /* margin-top: 0; */
+    display: block;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    font-size: smaller;
+    font-style: italic;
+    color: var(--kaiser-text);
+    text-align: right;
+}
+
