@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lexend+Giga:wght@100..900&family=Lexend+Peta:wght@100..900&family=M+PLUS+1p&family=Mea+Culpa&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.gnrp-frame {
+    background-color: transparent;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 700px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    justify-self: center;
+    outline-offset: -10px;
+}
+
+.gnrp-topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 700px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background-color: var(--gn-top-l);
+    
+}
+
+.gnrp-blue1 {
+    display: block;
+    background-color: var(--gn-top-l);
+    width: 110px;
+    height: 23px;
+    box-sizing: border-box;
+}
+
+.gnrp-white {
+    display: block;
+    background-color: var(--gn-top-md);
+    width: 480px;
+    height: 23px;
+    box-sizing: border-box;
+}
+
+.gnrp-blue2 {
+    display: block;
+    background-color: var(--gn-top-r);
+    width: 110px;
+    height: 23px;
+    box-sizing: border-box;
+}
+
+.gnrp-box {
+    max-width: 700px;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gnrp-text-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gn-txt-quote);
+    text-align: justify;
+    font-size: 12.5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    letter-spacing: 2px;
+    text-wrap: nowrap;
+    font-family: "Lexend Peta", sans-serif;
+    font-weight: 400px;
+}
+
+.gnrp-title-box {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: -90px;
+}
+
+.gnrp-bg-text {
+    margin-top: -15px;
+    position: absolute;
+    font-size: 100px;
+    color: var(--gn-txt-bh);
+    opacity: 0.1;
+    font-weight: bolder;
+    letter-spacing: -8px;
+    z-index: 1;
+    text-transform: uppercase;
+    -webkit-text-stroke: 5px;
+    font-family: "Lexend Peta", sans-serif;
+}
+
+.gnrp-txt-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.gnrp-text-il {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top: 110px;
+}
+
+.gnrp-txt-fl {
+    display: block;
+    color: var(--gn-txt-ca);
+    font-family: "Mea Culpa", cursive;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 65px;
+    z-index: 1;
+    margin-top: -50px;
+    box-sizing: border-box;
+}
+
+.gnrp-txt-sl {
+    display: block;
+    color: var(--gn-txt-lo);
+    font-family: "Lexend Giga", sans-serif;
+    text-transform: uppercase;
+    font-size: 42px;
+    letter-spacing: -3px;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+.gnrp-txt-tl {
+    display: block;
+    color: var(--gn-txt-quote);
+    font-family: "Lexend Giga", sans-serif;
+    text-transform: lowercase;
+    font-size: 0.9rem;
+    letter-spacing: 5px;
+    font-weight: normal;
+    margin-top: 15px;
+    font-weight: light;
+    box-sizing: border-box;
+}
+
+
+.gnrp-img-box {
+    display: flex;
+    margin: 1rem auto 0 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.gnrp-img-long {
+    display: block;
+    max-width: 448px;
+    width: 60%;
+    height: 150px;
+    border: 4px solid var(--gn-txt-ca);
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.gnrp-img-short {
+    display: block;
+    max-width: 148px;
+    width: 20%;
+    height: 150px;
+    border: 4px solid var(--gn-txt-ca);
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.gnrp-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: justify;
+    padding-top: 20px;
+    font-size: 1.03rem;
+    flex-direction: column;
+    color: var(--gn-txt);
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.gnrp-txt-bt {
+    position: relative;
+    color: var(--gn-remark);;
+    text-wrap: nowrap;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    margin: 1.5rem auto auto;
+    text-align: center;
+}
+
+.gnrp-credit {
+    position: relative;
+    display: block;
+    color: rgb(158, 158, 158);
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 0.5rem;
+    opacity: calc(0.4); 
+    box-sizing: border-box;
+    text-align: right;
+}
