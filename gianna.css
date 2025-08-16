@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lexend+Giga:wght@100..900&family=Lexend+Peta:wght@100..900&family=M+PLUS+1p&family=Mea+Culpa&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.gn-frame {
+    background-color: transparent;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    max-width: 700px;
+    width: 100%;
+    display: block;
+    outline-offset: -10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gn-topbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black;
+    max-width: 700px;
+    width: 100%;
+}
+
+.gn-blue1 {
+    display: block;
+    background-color: var(--gn-top-l);
+    width: 110px;
+    height: 23px;
+    box-sizing: border-box;
+}
+
+.gn-white {
+    display: block;
+    background-color: var(--gn-top-md);
+    width: 480px;
+    height: 23px;
+    box-sizing: border-box;
+}
+
+.gn-blue2 {
+    display: block;
+    background-color: var(--gn-top-r);
+    width: 110px;
+    height: 23px;
+    box-sizing: border-box;
+}
+
+.gn-box {
+    max-width: 700px;
+    width: 100%;
+    height: 650px;
+    position: relative;
+    justify-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    box-sizing: border-box;
+}
+
+.gn-text-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gn-txt-quote);
+    text-align: justify;
+    font-size: 0.8rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    letter-spacing: 0.2rem;
+    text-wrap: nowrap;
+    font-family: "Lexend Peta", sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+
+.gn-title-box {
+    display: flex;
+    justify-content: center;
+    margin-top: -27px;
+}
+
+.gn-bg-text {
+    margin-top: -15px;
+    position: absolute;
+    font-size: 6.25rem;
+    color: var(--gn-txt-bh);
+    opacity: 0.1;
+    font-weight: bolder;
+    letter-spacing: -0.7rem;
+    z-index: 1;
+    text-transform: uppercase;
+    -webkit-text-stroke: 5px;
+    font-family: "Lexend Peta", sans-serif;
+}
+
+.gn-txt-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+
+}
+
+.gn-text-il {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    top: 110px;
+}
+
+.gn-txt-fl {
+    display: block;
+    color: var(--gn-txt-ca);
+    font-family: "Mea Culpa", cursive;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 65px;
+    z-index: 1;
+    margin-top: -50px;
+    box-sizing: border-box;
+}
+
+.gn-txt-sl {
+    display: block;
+    color: var(--gn-txt-lo);
+    font-family: "Lexend Giga", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.625rem;
+    letter-spacing: -0.4rem;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+.gn-txt-tl {
+    display: flex;
+    color: var(--gn-txt-line);
+    font-family: "Lexend Giga", sans-serif;
+    text-transform: lowercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5rem;
+    font-weight: normal;
+    margin-top: 15px;
+    font-weight: light;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.gn-img-box {
+    width: 65%;
+    max-width: 420px;
+    height: 25%;
+    margin: 2rem auto 0 auto;;
+    object-fit: cover;
+    border: 9px solid var(--gn-txt-ca);
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: block;
+}
+
+.gn-txt-bt {
+    position: absolute;
+    bottom: -16px;
+    color: var(--gn-txt-line);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-wrap: nowrap;
+    font-family: "Lexend Peta", sans-serif;
+    font-weight: 400px;
+    font-size: 0.8rem;
+}
+
+.gn-credit {
+    position: relative;
+    display: block;
+    color: rgb(158, 158, 158);
+    font-family: "Lexend Giga", sans-serif;
+    font-size: 0.7rem;
+    opacity: calc(0.4); 
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    text-align: right;
+}
