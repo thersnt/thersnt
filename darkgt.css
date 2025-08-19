@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kapakana:wght@300..400&family=Viaoda+Libre&display=swap');
+
+.darkgt-frame {
+    background-color: transparent;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    display: block;
+    outline-offset: -10px;
+}
+
+.darkgt-bg {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* จัดให้อยู่กึ่งกลางแนวนอน */
+    align-items: center; 
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 60rem;
+    height: auto;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.darkgt-box {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    background-color: white;
+    margin: 5rem;
+    border-radius: 10px;
+}
+
+.darkgt-imgbox {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.darkgt-cover {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    height: 18rem;
+    object-fit: cover;
+    max-width: 680px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.darkgt-dp-frame {
+    position: absolute;
+    box-sizing: border-box;
+    max-width: 600px;
+    width: 87%;
+    object-fit: contain;
+    top: 4.7rem;
+    z-index: 2;
+}
+
+.darkgt-display {
+    position: absolute;
+    box-sizing: border-box;
+    max-width: 180px;
+    height: 180px;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    /* border: 10px solid white;
+    outline: 4px solid #521010;
+    outline-offset: -7.4px; */
+    top: 12rem;
+}
+
+.darkgt-display-name {
+    position: relative;
+    display: block;
+    box-sizing: border-box; 
+    margin-top: 130px;
+    font-family: "Kapakana", cursive;
+    font-size: 4rem;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+
+.darkgt-text {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: #828282;
+    text-wrap: nowrap;
+    font-size: 12px;
+}
+
+.darkgt-rp-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+    margin-top: 40px;
+}
+
+.darkgt-rp-content {
+    display: block;
+    box-sizing: border-box; 
+    text-align: justify;
+    line-height: 1.7rem;
+    font-size: 16px;
+    font-family: "K2D", sans-serif;
+    font-weight: 400;
+}
+
+.darkgt-remark {
+    display: block;
+    box-sizing: border-box; 
+    text-align: right;
+    line-height: 1.7rem;
+    font-size: 16px;
+    font-family: "K2D", sans-serif;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
+.darkgt-bt-content {
+    display: flex;
+    display: block;
+    box-sizing: border-box; 
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    text-wrap: nowrap
+}
+
+.darkgt-quote-bt1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: #828282;
+    font-size: 12px;
+}
+
+.darkgt-quote-bt2 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: #828282;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.darkgt-quote-bt3 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: #828282;
+    font-size: 12px;
+}
