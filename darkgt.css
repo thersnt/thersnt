@@ -9,7 +9,6 @@
     overflow: hidden;
     max-width: 900px;
     width: 100%;
-    display: block;
 }
 
 .darkgt-bg {
@@ -26,6 +25,7 @@
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: auto;
 }
 
 .darkgt-box {
