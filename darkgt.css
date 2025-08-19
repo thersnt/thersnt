@@ -3,11 +3,11 @@
 .darkgt-frame {
     background-color: transparent;
     margin: auto;
-    padding: 10px;
+    padding: 0.625rem;
     text-align: center;
     position: relative;
     overflow: hidden;
-    max-width: 900px;
+    max-width: 56.25rem;
     width: 100%;
 }
 
@@ -19,8 +19,8 @@
     align-items: center; 
     box-sizing: border-box;
     width: 100%;
-    max-width: 800px;
-    padding: 40px;
+    max-width: 50rem;
+    padding: 2.5rem;
     height: auto;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -33,10 +33,10 @@
     display: block;
     box-sizing: border-box;
     width: 100%;
-    max-width: 700px;
+    max-width: 43.75rem;
     height: auto;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .darkgt-imgbox {
@@ -44,8 +44,8 @@
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
-    margin: 20px;
-    padding: 4px;
+    margin: 1.25rem;
+    padding: 0.25rem;
     justify-content: center;
     align-items: center;
 }
@@ -56,41 +56,31 @@
     box-sizing: border-box;
     height: 18rem;
     object-fit: cover;
-    max-width: 680px;
+    max-width: 42.5rem;
     width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
 }
-
-/* .darkgt-dp-frame {
-    position: absolute;
-    display: block;
-    box-sizing: border-box;
-    max-width: 500px;
-    object-fit: contain;
-    top: 58px;
-    z-index: 2;
-} */
 
 .darkgt-display {
     position: absolute;
     display: block;
     box-sizing: border-box;
-    width: 190px;
-    height: 190px;
+    width: 11.875rem;
+    height: 11.875rem;
     border-radius: 50%;
     object-fit: cover;
-    top: 192px;
-    border: 12px solid white;
-    outline: 4px solid var(--darkgt-border);
-    outline-offset: -8.3px;
+    top: 12rem;
+    border: 0.75rem solid white; 
+    outline: 0.25rem solid var(--darkgt-border);
+    outline-offset: -0.51875rem;
 }
 
 .darkgt-display-name {
     position: relative;
     display: block;
     box-sizing: border-box; 
-    margin-top: 50px;
+    margin-top: 3.125rem;
     font-family: "Kapakana", cursive;
     font-size: 4rem;
     font-weight: 500;
@@ -101,12 +91,12 @@
 .darkgt-text {
     position: relative;
     display: block;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
     color: #828282;
     text-wrap: nowrap;
-    font-size: 12px;
-    margin-top: -30px;
+    font-size: 0.75rem;
+    margin-top: -1.875rem;
 }
 
 .darkgt-rp-box {
@@ -114,7 +104,7 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box; 
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 
 .darkgt-rp-content {
@@ -122,7 +112,7 @@
     box-sizing: border-box; 
     text-align: justify;
     line-height: 1.9rem;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "K2D", sans-serif;
     font-weight: 400;
     color: black;
@@ -133,41 +123,37 @@
     box-sizing: border-box; 
     text-align: right;
     line-height: 1.7rem;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "K2D", sans-serif;
     font-weight: 500;
-    padding-top: 50px;
+    padding-top: 3.125rem;
     color: black;
 }
 
 .darkgt-bt-content {
     display: flex;
-    display: block;
     box-sizing: border-box; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    text-wrap: nowrap
-}
-
-.darkgt-quote-bt1 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: 500;
-    color: #828282;
-    font-size: 12px;
+    padding-top: 3.125rem;
 }
 
 .darkgt-quote-bt2 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
     color: #828282;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-style: italic;
 }
 
 .darkgt-quote-bt3 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
     color: #828282;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
