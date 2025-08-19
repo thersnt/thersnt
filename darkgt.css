@@ -78,7 +78,7 @@
     box-sizing: border-box;
     max-width: 180px;
     height: 180px;
-    width: 100%;
+    width: 87%;
     border-radius: 50%;
     object-fit: cover;
     /* border: 10px solid white;
@@ -96,6 +96,7 @@
     font-size: 4rem;
     font-weight: 500;
     text-wrap: nowrap;
+    color: black;
 }
 
 .darkgt-text {
@@ -122,6 +123,7 @@
     font-size: 16px;
     font-family: "K2D", sans-serif;
     font-weight: 400;
+    color: black;
 }
 
 .darkgt-remark {
@@ -133,6 +135,7 @@
     font-family: "K2D", sans-serif;
     font-weight: 500;
     padding-top: 50px;
+    color: black;
 }
 
 .darkgt-bt-content {
