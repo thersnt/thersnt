@@ -170,3 +170,25 @@
     color: #828282;
     font-size: 12px;
 }
+
+@media (max-width: 768px) {
+.darkgt-box {
+    margin: 1rem; /* ลด margin จาก 5rem */
+    max-width: 95%;
+  }
+
+.darkgt-dp-frame {
+    top: 88px;
+    max-width: 500px;
+}
+
+.darkgt-box {
+    max-width: 600px;
+    padding: 3.3px;
+}
+
+.darkgt-display-name {
+    margin-top: 70px;
+}
+
+}
