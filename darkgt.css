@@ -20,7 +20,7 @@
     box-sizing: border-box;
     width: 100%;
     max-width: 800px;
-    padding: 30px;
+    padding: 40px;
     height: auto;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -44,8 +44,8 @@
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
-    margin: 32px;
-    padding: 16px;
+    margin: 20px;
+    padding: 4px;
     justify-content: center;
     align-items: center;
 }
