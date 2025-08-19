@@ -67,9 +67,9 @@
     position: absolute;
     display: block;
     box-sizing: border-box;
-    max-width: 600px;
+    max-width: 550px;
     object-fit: contain;
-    top: 79px;
+    top: 69px;
     z-index: 2;
 }
 
