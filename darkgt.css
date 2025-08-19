@@ -70,7 +70,7 @@
     max-width: 600px;
     width: 87%;
     object-fit: contain;
-    top: 88px;
+    top: 79px;
     z-index: 2;
 }
 
@@ -89,7 +89,7 @@
     position: relative;
     display: block;
     box-sizing: border-box; 
-    margin-top: 50px;
+    margin-top: 70px;
     font-family: "Kapakana", cursive;
     font-size: 4rem;
     font-weight: 500;
@@ -105,7 +105,7 @@
     color: #828282;
     text-wrap: nowrap;
     font-size: 12px;
-    margin-top: -25px;
+    margin-top: -30px;
 }
 
 .darkgt-rp-box {
@@ -120,7 +120,7 @@
     display: block;
     box-sizing: border-box; 
     text-align: justify;
-    line-height: 1.7rem;
+    line-height: 1.9rem;
     font-size: 16px;
     font-family: "K2D", sans-serif;
     font-weight: 400;
