@@ -93,6 +93,7 @@
     max-width: 80%; 
 }
 
+
 .bsh-post-it::before {
     content: '';
     position: absolute;
