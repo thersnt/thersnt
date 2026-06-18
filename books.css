@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600&family=Caveat:wght@400;600;700&family=Fredoka:wght@300;400;500;600;700&family=Mali:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.bsh-wrapper {
+    background-color: #fff9e6;
+    background-image: radial-gradient(#ffe0cc 15%, transparent 16%),
+                      radial-gradient(#ffe0cc 15%, transparent 16%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    font-family: 'Bai Jamjuree', sans-serif; 
+    
+    padding: 50px; 
+    border-radius: 40px; 
+    max-width: 730px; 
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bsh-shelf-container {
+    background: #ffebf0; 
+    border: 6px solid #ffffff; 
+    outline: 12px solid #ffd1dc; 
+    border-radius: 24px; 
+    width: 100%;
+    max-width: 650px; 
+    box-shadow: 0 20px 40px rgba(255, 182, 193, 0.4); 
+    padding: 12px;
+    position: relative;
+}
+
+.bsh-shelf-header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 35px 15px;
+    border-bottom: 8px dashed #ffd1dc; 
+    border-radius: 18px 18px 0 0;
+    margin-bottom: 5px;
+    position: relative; 
+    max-width: 100%;
+    overflow: hidden; 
+}
+
+.bsh-shelf-header h1 {
+    font-family: 'Fredoka', sans-serif !important; 
+    font-size: clamp(1.8rem, 4.5vw, 3rem); 
+    color: #ff6680; 
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.bsh-shelf-header p.bsh-recommender {
+    font-family: 'Mali', sans-serif;
+    font-size: 1.5rem;
+    color: #b38b93;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.bsh-post-it {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    background-color: #fff9b0; 
+    color: #ff6680;
+    font-family: 'Caveat', cursive; 
+    font-size: clamp(1.1rem, 2.8vw, 1.6rem);
+    font-weight: 700;
+    padding: 6px 14px;
+    transform: rotate(8deg); 
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.08);
+    z-index: 10;
+    border-bottom-right-radius: 15px 5px; 
+    max-width: 80%; 
+}
+
+.bsh-post-it::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-4deg);
+    width: 35px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0,0,0,0.02);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.bsh-shelf-row {
+    background-color: rgba(255, 255, 255, 0.4); 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap; 
+    gap: 25px; 
+    padding: 40px 20px 35px 20px; 
+    border-bottom: 14px solid #ffe3e8; 
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+}
+
+.bsh-shelf-row:hover { z-index: 10; }
+.bsh-shelf-row:last-child { border-bottom: none; }
+
+.bsh-book-item {
+    width: 145px;  
+    height: 205px; 
+    max-width: 100%; 
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.bsh-book-item:hover { z-index: 20; }
+
+.bsh-book-cover {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background-image: var(--img);
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px; 
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.3);
+    transition: all 0.4s ease;
+}
+
+.bsh-book-label {
+    position: absolute;
+    bottom: -22px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    color: #ff6680;
+    font-family: 'Mali', 'Bai Jamjuree', sans-serif; 
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 12px;
+    border: 2px solid #ffe3e8;
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.4);
+    white-space: nowrap;
+    max-width: 130px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    z-index: 5;
+    pointer-events: none; 
+    transition: all 0.4s ease;
+}
+
+.bsh-book-item:hover .bsh-book-cover { 
+    opacity: 0.3; 
+    transform: translateY(-10px); 
+}
+
+.bsh-book-item:hover .bsh-book-label {
+    transform: translate(-50%, -10px);
+}
+
+.bsh-book-item-expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    
+    width: 90%; 
+    height: 60%;
+    max-width: 620px; 
+    max-height: 85vh;
+    
+    background-color: #fffdec;
+    
+    color: #4a3b32;
+    padding: 40px 30px; 
+    border-radius: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; 
+    align-items: center;
+    gap: 25px; 
+    
+    opacity: 0;
+    transition: all 0.5s ease-in-out 0.1s;
+    z-index: 9999 !important; 
+    pointer-events: none;
+    
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+    border: 6px solid #ffd1dc; 
+}
+
+.bsh-expanded-cover-container {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bsh-expanded-cover {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background-image: var(--img);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.15)); 
+}
+
+.bsh-expanded-details {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto; 
+    padding-right: 15px;
+    text-align: left;
+}
+
+.bsh-book-item:hover .bsh-book-item-expanded {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.bsh-book-item::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 240, 245, 0.85); 
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.bsh-book-item:hover::after { opacity: 1; }
+
+
+.bsh-expanded-details h2 {
+    font-family: 'Fredoka', 'Mali', sans-serif; 
+    font-size: 1.5rem; 
+    margin-bottom: 8px;
+    color: #ff6680; 
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.bsh-expanded-details .bsh-expanded-author {
+    font-family: 'Mali', sans-serif; 
+    font-size: 1.05rem;
+    color: #ffa3b1;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.bsh-expanded-details .bsh-expanded-description {
+    font-family: 'Bai Jamjuree', sans-serif; 
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #615147;
+    font-weight: 400;
+}
+
+.bsh-expanded-details::-webkit-scrollbar { width: 6px; }
+.bsh-expanded-details::-webkit-scrollbar-track { background: #fffefb; }
+.bsh-expanded-details::-webkit-scrollbar-thumb { background: #ffd1dc; border-radius: 3px; }
+
+@media (max-width: 768px) {
+    .bsh-book-item-expanded {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1.3fr;
+        padding: 30px 20px;
+        gap: 15px;
+    }
+    .bsh-expanded-details h2 { font-size: 1.5rem; }
+    
+    .bsh-wrapper { padding: 25px; border-radius: 30px; }
+}
+
+@media (max-width: 500px) {
+    .bsh-wrapper { padding: 15px 10px; border-radius: 20px; }
+
+    .bsh-shelf-container { max-width: 100%; border-width: 4px; outline-width: 6px; padding: 8px; }
+    .bsh-shelf-header { padding: 25px 10px; }
+    .bsh-shelf-header h1 { font-size: 2rem !important; }
+    
+    .bsh-post-it { top: -10px; right: 10px; padding: 5px 12px; }
+    .bsh-post-it::before { width: 25px; height: 10px; top: -6px; }
+
+    .bsh-shelf-row { gap: 12px; padding: 25px 10px 35px 10px; border-bottom-width: 10px; }
+    
+    .bsh-book-item { width: 95px; height: 135px; } 
+    .bsh-book-label { font-size: 0.65rem; padding: 2px 6px; max-width: 85px; bottom: -18px; }
+}
