@@ -14,11 +14,11 @@
     background-position: 0 0, 30px 30px;
     font-family: 'Bai Jamjuree', sans-serif; 
     
-    padding: 50px; 
+    padding: 40px; 
     border-radius: 40px; 
     max-width: 730px; 
     width: 100%;
-    margin: 30px auto;
+    margin: 30px auto; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +34,8 @@
     box-shadow: 0 20px 40px rgba(255, 182, 193, 0.4); 
     padding: 12px;
     position: relative;
+    transform: scale(1); 
+    overflow: hidden; 
 }
 
 .bsh-shelf-header {
@@ -45,7 +47,6 @@
     margin-bottom: 5px;
     position: relative; 
     max-width: 100%;
-    overflow: hidden; 
 }
 
 .bsh-shelf-header h1 {
@@ -60,8 +61,8 @@
 }
 
 .bsh-shelf-header p.bsh-recommender {
-    font-family: 'Mali', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 0.95rem;
     color: #b38b93;
     margin-top: 10px;
     font-weight: 500;
@@ -175,28 +176,28 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     
-    width: 90%; 
-    height: 60%;
-    max-width: 620px; 
-    max-height: 85vh;
+    width: 92%; 
+    height: auto; 
+    max-height: 90%; 
+    max-width: 600px; 
     
     background-color: #fffdec;
-    
+
     color: #4a3b32;
     padding: 40px 30px; 
-    border-radius: 24px;
+    border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1.5fr; 
     align-items: center;
     gap: 25px; 
     
     opacity: 0;
-    transition: all 0.5s ease-in-out 0.1s;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s; /* เด้งสมูทขึ้น */
     z-index: 9999 !important; 
     pointer-events: none;
     
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
-    border: 6px solid #ffd1dc; 
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border: 4px solid #ffd1dc; 
 }
 
 .bsh-expanded-cover-container {
@@ -226,7 +227,7 @@
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
     overflow-y: auto; 
     padding-right: 15px;
     text-align: left;
@@ -243,18 +244,16 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(255, 240, 245, 0.85); 
-    backdrop-filter: blur(3px);
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(255, 240, 245, 0.95);
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.4s ease;
     z-index: 999;
     pointer-events: none;
 }
 
 .bsh-book-item:hover::after { opacity: 1; }
-
 
 .bsh-expanded-details h2 {
     font-family: 'Fredoka', 'Mali', sans-serif; 
@@ -287,6 +286,7 @@
 .bsh-expanded-details::-webkit-scrollbar-track { background: #fffefb; }
 .bsh-expanded-details::-webkit-scrollbar-thumb { background: #ffd1dc; border-radius: 3px; }
 
+
 @media (max-width: 768px) {
     .bsh-book-item-expanded {
         grid-template-columns: 1fr;
@@ -296,11 +296,11 @@
     }
     .bsh-expanded-details h2 { font-size: 1.5rem; }
     
-    .bsh-wrapper { padding: 25px; border-radius: 30px; }
+    .bsh-wrapper { padding: 25px; border-radius: 30px; } 
 }
 
 @media (max-width: 500px) {
-    .bsh-wrapper { padding: 15px 10px; border-radius: 20px; }
+    .bsh-wrapper { padding: 15px 10px; border-radius: 20px; } 
 
     .bsh-shelf-container { max-width: 100%; border-width: 4px; outline-width: 6px; padding: 8px; }
     .bsh-shelf-header { padding: 25px 10px; }
