@@ -60,7 +60,15 @@
     word-wrap: break-word;
 }
 
-.bsh-shelf-header p.bsh-recommender {
+.bsh-shelf-header p.bsh-display-name {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    color: #b38b93;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.bsh-shelf-header p.bsh-tribe {
     font-family: 'Fredoka', sans-serif;
     font-size: 1.1rem;
     color: #b38b93;
