@@ -258,7 +258,8 @@
 .bsh-expanded-details h2 {
     font-family: 'Fredoka', 'Mali', sans-serif; 
     font-size: 1.6rem; 
-    margin-bottom: 8px;
+    line-height: 1.2;
+    margin-bottom: 12px; 
     color: #ff6680; 
     font-weight: 600;
     letter-spacing: 0.5px;
