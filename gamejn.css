@@ -172,6 +172,8 @@
   flex-direction: column;
   gap: 10px;
   width: 100%;
+  /* ล็อกความสูงคอนเทนเนอร์ด้านในเพื่อคำนวณพื้นที่ของขีดจำกัด Scrollbar */
+  height: calc(100% - 0px); 
   overflow: hidden; 
 }
 
@@ -198,8 +200,10 @@
   flex-shrink: 0;
 }
 
+/* จุดแก้ไขสำคัญ: บังคับบล็อกรีวิวขยายเต็มพื้นที่ที่เหลือและตัดส่วนล้น */
 .gjn-form-group.gjn-scroll-group {
-  flex-grow: 1;
+  flex: 1;
+  min-height: 0; 
   overflow: hidden;
 }
 
@@ -212,34 +216,43 @@
 .gjn-want-section .gjn-label { color: #1650b8; }
 .gjn-miss-section .gjn-label { color: #6c2cb0; }
 
-.gjn-input-title,
-.gjn-input-review {
+.gjn-input-title {
   width: 100%;
-  height: 120px; /* ล็อกความสูงคงที่ไว้เพื่อให้เกิดการ Scroll เมื่อข้อความยาวเกิน */
-  overflow-y: auto; /* เปิดให้มี Scrollbar แนวตั้งเมื่อข้อความล้น */
-  padding-right: 5px;
-  word-break: break-word;
+  border: none;
+  outline: none;
   font-family: 'Mitr', sans-serif;
   font-size: 0.95rem;
   color: #22007c;
   font-weight: 500;
-  line-height: 1.6rem;
+  padding: 0;
   box-sizing: border-box;
-}
-
-.gjn-input-title {
+  background-color: transparent; 
+  background-image: none;
+  line-height: 1.6rem; 
   height: 1.6rem;
   overflow: hidden;
   white-space: nowrap;
 }
 
+/* จุดแก้ไขสำคัญ: ล็อกความสูงจำกัดของกล่อง div และสั่งรีดให้แสดงผล Scrollbar ตลอดเวลา */
 .gjn-input-review {
-  height: 100%;
-  overflow-y: auto; 
-  padding-right: 5px;
+  width: 100%;
+  height: 115px; /* ล็อกความสูงของ div เนื้อหาเพื่อให้เหมาะสมกับขนาดกล่องรวม */
+  overflow-y: scroll; /* เปิดเป็น scroll เพื่อบังคับเปิดพื้นที่แถบเลื่อนสี ๆ */
+  padding-right: 8px;
   word-break: break-word;
+  border: none;
+  outline: none;
+  font-family: 'Mitr', sans-serif;
+  font-size: 0.95rem;
+  color: #22007c;
+  font-weight: 500;
+  background-color: transparent; 
+  line-height: 1.6rem; 
+  box-sizing: border-box;
 }
 
+/* การตั้งค่าหน้าตาของ Scrollbar แยกสีตามประเภท */
 .gjn-input-review::-webkit-scrollbar {
   width: 6px;
 }
@@ -247,7 +260,6 @@
   background: #f5f5f5;
   border-radius: 10px;
 }
-
 .gjn-input-review::-webkit-scrollbar-thumb {
   background: var(--gjn-line-color);
   border-radius: 10px;
@@ -312,8 +324,13 @@
   }
   .gjn-content-box {
     width: 100%;
+    height: auto;
     flex: none;
     overflow: visible;
+  }
+  .gjn-form-group.gjn-scroll-group {
+    overflow: visible;
+    height: auto;
   }
   .gjn-input-review {
     overflow-y: visible; 
