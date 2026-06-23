@@ -1,14 +1,9 @@
-/* ==========================================================================
-   1. IMPORT FONTS & GLOBAL STYLES
-   ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;700&family=Press+Start+2P&display=swap');
 
-/* ส่วนคอนเทนเนอร์หลัก ครอบเนื้อหาทั้งหมด */
 .gjn-wrapper {
   max-width: 750px;
   margin: 20px auto;
   background-color: #0d0628;
-  /* ลายตาราง Grid พื้นหลังสไตล์เกมเรโทร */
   background-image: 
     linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
@@ -22,15 +17,11 @@
   overflow: hidden;
 }
 
-/* ==========================================================================
-   2. HEADER ZONE (ล็อกตำแหน่ง Absolute ขนาบข้าง ดึงระดับลงมากึ่งกลางพื้นที่ว่าง)
-   ========================================================================== */
 .gjn-header {
   text-align: center;
   margin-bottom: 35px;
 }
 
-/* ชื่อหัวข้อหลัก GAMER'S JOURNAL */
 .gjn-header-title h1 {
   font-family: 'Press Start 2P', cursive;
   font-size: 2.2rem;
@@ -40,13 +31,11 @@
   letter-spacing: -1px;
 }
 
-/* กล่องครอบป้ายขาว (ใช้เป็นตัวแม่ในการยึดตำแหน่ง Absolute ของตกแต่ง) */
 .gjn-subtitle-container {
   display: inline-block;
   position: relative;
 }
 
-/* 🎮 [ฝั่งซ้าย - จอยเกม] ล็อกระยะห่างพอดี ดึงระดับลงมาตรงพื้นที่ว่างด้านล่าง */
 .gjn-subtitle-container::before {
   content: "";
   position: absolute;
@@ -62,7 +51,6 @@
   filter: drop-shadow(3px 3px 0px #000);
 }
 
-/* 🎮 [ฝั่งขวา - ปุ่มกด] ล็อกระยะห่างพอดี ดึงระดับลงมาตรงพื้นที่ว่างด้านล่าง */
 .gjn-subtitle-container::after {
   content: "";
   position: absolute;
@@ -78,7 +66,6 @@
   filter: drop-shadow(3px 3px 0px #000);
 }
 
-/* ตัวป้ายสีขาว */
 .gjn-subtitle {
   background-color: #ffffff;
   color: #1a0033;
@@ -92,7 +79,6 @@
   white-space: nowrap;
 }
 
-/* กล่องข้อความสองบรรทัดใต้ป้ายขาว */
 .gjn-author-box {
   margin-top: 22px; 
   display: flex;
@@ -100,7 +86,6 @@
   gap: 8px; 
 }
 
-/* บรรทัดที่ 1: ชื่อ Mikael F. Kaiser (สีชมพูนีออนสว่าง) */
 .gjn-author-name {
   font-family: 'Press Start 2P', cursive;
   font-size: 0.95rem; 
@@ -109,7 +94,6 @@
   letter-spacing: 0.5px;
 }
 
-/* บรรทัดที่ 2: เผ่าพันธุ์ Vampire (สีฟ้าพาสเทลเรโทร) */
 .gjn-author-role {
   font-family: 'Press Start 2P', cursive;
   font-size: 0.85rem; 
@@ -118,20 +102,15 @@
   letter-spacing: 0.5px;
 }
 
-/* ==========================================================================
-   3. SECTION LAYOUT & COLOR VARIABLES (กำหนดตัวแปรสีสำหรับใช้ร่วมกัน)
-   ========================================================================== */
 .gjn-section {
   position: relative;
   margin-bottom: 40px;
 }
 
-/* กำหนดตัวแปรสีประจำเซกชันสำหรับเอาไปใช้กับ Label และ Scrollbar */
 .gjn-play-section { --gjn-line-color: #ff5ebb; }
 .gjn-want-section { --gjn-line-color: #2575fc; }
 .gjn-miss-section { --gjn-line-color: #9b51e0; }
 
-/* กล่องสีขาวพื้นหลังของแต่ละ Section */
 .gjn-container {
   position: relative; 
   display: flex;
@@ -146,7 +125,6 @@
   box-sizing: border-box;
 }
 
-/* ป้ายตัวเลขเกยทับมุมกล่อง (1, 2, 3) */
 .gjn-number {
   position: absolute;
   left: -12px;
@@ -168,7 +146,6 @@
 .gjn-num-2 { background-color: #2a69ff; color: #fff; }
 .gjn-num-3 { background-color: #a22aff; color: #fff; }
 
-/* กล่องแสดงรูปภาพเกม (ฝั่งซ้าย) */
 .gjn-image-box {
   flex: 1.1; 
   width: 100%;
@@ -186,7 +163,6 @@
   display: block;
 }
 
-/* กล่องข้อความและอินพุต (ฝั่งขวา) */
 .gjn-content-box {
   flex: 1.2;
   display: flex;
@@ -196,7 +172,6 @@
   overflow: hidden; 
 }
 
-/* ป้าย Badge ด้านบนของกล่องรับข้อความ */
 .gjn-badge {
   font-weight: bold;
   color: #fff;
@@ -230,14 +205,10 @@
   font-weight: bold;
 }
 
-/* สีฟอนต์ของ Label แยกตามแต่ละ Section */
 .gjn-play-section .gjn-form-group label { color: #cc1b5b; }
 .gjn-want-section .gjn-form-group label { color: #1650b8; }
 .gjn-miss-section .gjn-form-group label { color: #6c2cb0; }
 
-/* ==========================================================================
-   4. TEXTAREA & INPUT DESIGN (ไม่มีเส้นตารางสมุดโน้ต แต่ Scrollbar มีสีสัน)
-   ========================================================================== */
 .gjn-input-title,
 .gjn-input-review {
   width: 100%;
@@ -251,7 +222,7 @@
   padding: 0;
   box-sizing: border-box;
   background-color: transparent; 
-  background-image: none;        /* โล่งสะอาดยืนยันไม่มีเส้นตริตรา */
+  background-image: none;
   line-height: 1.6rem; 
 }
 
@@ -266,7 +237,6 @@
   padding-right: 5px;
 }
 
-/* ตกแต่งแถบ Scrollbar ของกล่องรีวิว */
 .gjn-input-review::-webkit-scrollbar {
   width: 6px;
 }
@@ -274,15 +244,12 @@
   background: #f5f5f5;
   border-radius: 10px;
 }
-/* 🌟 ดึงสีของแต่ละช่องมาใส่เป็นสีสันให้หัว Scrollbar ตรงนี้ครับ */
+
 .gjn-input-review::-webkit-scrollbar-thumb {
   background: var(--gjn-line-color);
   border-radius: 10px;
 }
 
-/* ==========================================================================
-   5. FOOTER ZONE
-   ========================================================================== */
 .gjn-footer {
   text-align: center;
   margin-top: 25px;
@@ -297,15 +264,11 @@
   font-weight: 500;
 }
 
-/* ==========================================================================
-   6. RESPONSIVE SYSTEM (ระบบรองรับการแสดงผลหน้าจอมือถือ)
-   ========================================================================== */
 @media (max-width: 650px) {
   .gjn-header-title h1 {
     font-size: 1.5rem;
   }
-  
-  /* ย่อขนาดและปรับตำแหน่งของตกแต่งในมือถือให้หดกลับเข้ามารับกับชื่อเว็บ */
+
   .gjn-subtitle-container::before {
     width: 42px;
     height: 42px;
@@ -318,7 +281,6 @@
     right: -52px;
     top: 130%;
   }
-  
   .gjn-subtitle {
     font-size: 0.7rem;
     padding: 4px 10px;
@@ -330,8 +292,6 @@
   .gjn-author-role {
     font-size: 0.65rem;
   }
-  
-  /* สลับ Layout กล่องเนื้อหาเป็นแนวตั้ง */
   .gjn-container {
     flex-direction: column;
     height: auto; 
