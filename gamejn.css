@@ -86,7 +86,7 @@
   gap: 8px; 
 }
 
-.gjn-author-name {
+.gjn-display-name {
   font-family: 'Press Start 2P', cursive;
   font-size: 0.95rem; 
   color: #ff5ebb; 
@@ -94,7 +94,7 @@
   letter-spacing: 0.5px;
 }
 
-.gjn-author-role {
+.gjn-tribe {
   font-family: 'Press Start 2P', cursive;
   font-size: 0.85rem; 
   color: #5ec6ff; 
